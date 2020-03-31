@@ -4,12 +4,14 @@ $(document).ready(function(){
     $("#work-responses").show();
     $("input:checkbox[name=work-transportation]:checked").each(function(){
       var workTransportationMode = $(this).val();
-      $("#work-responses").append(workTransportationMode +"<br>");
-    })
+      $('#work-responses').append(workTransportationMode + "<br>");
+    });
     $("#fun-responses").show();
     $("input:checkbox[name=fun-transportation]:checked").each(function(){
       var funTransportationMode = $(this).val();
-      $("#fun-responses").append(funTransporationMode + "<br>");
-    })
-  })
-})
+      $('#fun-responses').append(funTransportationMode + "<br>");
+    });
+    $("#survey").hide();
+    
+  });
+});
